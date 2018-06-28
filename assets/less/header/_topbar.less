@@ -1,0 +1,35 @@
+.top-bar {    
+    width: 100%;
+    .top-bar-row {
+        padding: 5px 0;
+        border-bottom: 1px solid #f1f1f1;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        font-size: 13px;
+    } 
+    .topbar-list {
+        margin: 0;
+        padding: 0;
+        display: flex;       
+    }
+    .topleft-bar 
+    {
+        margin: 0;
+        li{
+            margin-right: 20px;
+        }
+    }
+    .topright-bar{
+        margin: 0;
+        li{
+            margin-left: 20px;
+            &:last-child{
+                font-weight: 600;
+                a{
+                    color: #76b852;
+                }
+            }
+        }
+    }
+}

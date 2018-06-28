@@ -1,0 +1,21 @@
+body{
+    width:100%;
+    min-height: 100%;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: 14px;
+    color:#818181;
+}
+body.city-opened{
+    overflow: hidden;
+        &:after {
+        content: '';
+        position: fixed;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #00000070;
+    }
+}

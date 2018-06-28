@@ -1,0 +1,27 @@
+.breadcrumbs-list {
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    padding: 16px 0;
+    li{
+        margin: 0;
+        font-size: 13px;
+        display: inline-block;
+        margin-right: 5px;
+        text-transform: capitalize;
+        &:after{
+            font-size: 11px;
+            content: "/";
+            margin-left: 5px;
+            position: relative;
+            top: -1px;
+        }
+        &:last-child{
+            color: #818181;
+            font-weight: 600;
+            &:after{
+               display: none;
+            }
+        }
+    }
+}

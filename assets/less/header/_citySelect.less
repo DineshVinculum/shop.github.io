@@ -1,0 +1,104 @@
+.city-select {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #fff;
+    height: auto;
+    z-index: 9;
+    transform: translateY(-100%);
+    transition: all 0.3s;
+    &.open{
+        transform: translateY(0%);
+    }
+    .city-header{
+        font-size: 20px;
+        margin: 30px auto;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .close-city {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 20px;
+        color: #818181;
+        cursor: pointer;
+        &:hover{
+            color:#76b852;
+        }
+    }
+}
+
+.cities-list {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    align-items: center;
+    justify-content: center;
+    .city-name{
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+        cursor: pointer;
+        &:last-child{
+            margin-right: 0;
+        }
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 4px;
+            text-transform: capitalize;
+            word-break: break-word;
+        }
+    }
+    .city-image {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        border: 2px solid #818181;
+        margin: 0 auto 5px;
+        overflow: hidden;
+        background: #818181d1;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        img{
+            width:50px;
+            height: 50px;
+        }
+    }
+    
+}
+.your-city {
+    margin-bottom: 30px;
+    .your-city--inner {
+        width: 400px;
+        margin: 0 auto;
+        border: 1px solid #e0e0e0;
+        height: 40px;
+        line-height: 40px;
+        display: flex;
+    }
+    .city-box {
+        width: 300px;
+        .selectbox {
+            width: 299px;
+            height: 38px;
+            border: none;
+            padding:0 10px;
+            -webkit-appearance: none;
+            outline: none;
+        }
+    }
+    .detect-city {
+        width: 100px;
+        border-left: 1px solid #e0e0e0;
+        cursor: pointer;
+        &:hover{
+            color:#76b852;
+        }
+    }
+}

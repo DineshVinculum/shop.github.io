@@ -1,0 +1,45 @@
+/******** Acccordian Css*********/
+
+.accrodian-panel
+{
+    border-bottom: 1px solid grey;    
+    h4{
+        padding-left: @false;
+        height: 51px;
+        font-size: 1em;
+        font-weight: 600;
+        line-height: 51px;
+        cursor: @pointer;
+        &:after {
+            display: @db;
+            font-size: 1.2em;
+            content: '+';
+            width: 20px;
+            height: 20px;
+            float: @fr;
+            font-weight: 400;
+        }
+    }
+    .accordian-content{
+        display: @dn;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.42857143;
+        font-size: @f14;
+        p{
+            margin-bottom: 10px;
+        }
+    }
+}
+.accrodian-panel--active{
+    h4{       
+        &:after {
+            content: '-';
+        }
+    }
+    .accordian-content{
+        display: @db;
+    }
+}
+
+/******** Acccordian Css End*********/

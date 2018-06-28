@@ -1,0 +1,88 @@
+.catalogsearch-result-index {    
+    main#maincontent {
+        width: 1240px;
+        max-width: 96%;
+        margin: @center;
+    }
+    .container{
+        max-width: @full;
+    }
+    .no-result-total {
+        display: @df;
+        width: @full;
+        padding-top: 90px;
+        align-items: @tc;
+    }
+    .no-result {
+        font-size: 40px;
+        font-weight: normal;
+        color:@black;
+        margin: 0 20px 0 0;
+        text-transform: capitalize;
+    }
+    .search-text {
+        font-family: 'Gotham-Book', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: @black;
+        font-weight: normal;
+        background: transparent;
+        width: 75%;
+    }
+    .message.notice {
+        display: @dn;
+    }
+    .title-also-like {
+        padding: @false;
+        margin: 0 0 30px;
+        border-bottom: 4px solid @black;
+        line-height: 36px;
+        font-size: 28px;
+        text-align: @tc;
+        width:@full;
+        span {
+            font-size: 28px;
+            line-height: 36px;
+            margin:@false;
+            position: relative;
+            bottom: -22px;
+            background: @white;
+            padding: 0 15px;
+            font-family: "MillerDisplay-Light", Helvetica, Roboto, Arial, sans-serif;
+        }
+    }
+    .toolbar-products{
+        position: @relative;
+        .modes{
+            display: @dn;
+        }
+    }
+}
+
+
+/***************** responsive Media*****************/
+
+@media only screen and (max-width: 768px) {
+    .catalogsearch-result-index {
+        .no-result-total {
+           flex-wrap: wrap;
+           padding-top: 20px;
+        }
+        .no-result {
+            font-size: 32px;
+            width:@full;
+            text-align: @tc;
+        }
+        .search-text {
+           width:@full;
+            text-align: @tc;
+            margin-top: 20px;
+        }
+        .title-also-like {
+            font-size: 20px;
+            span {
+                font-size: 20px;                
+            }
+        }
+    }
+}

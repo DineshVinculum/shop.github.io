@@ -1,0 +1,87 @@
+@full:100%;
+@one-half:50%;
+@center:0 auto;
+@dn:none;
+@df:flex;
+@db:block;
+@dib:inline-block;
+
+@relative:relative;
+@fixed:fixed;
+@absolute:absolute;
+@static:static;
+
+@pointer:pointer;
+@udl: underline;
+@ttu:uppercase;
+@tc:center;
+@tl:left;
+@fr:right;
+
+@false:0;
+@true:1;
+@visible:visible;
+@hidden:hidden;
+
+
+@theme-color:#d61b51;
+@white:white;
+@gray:#333;
+@silver:#999;
+@black:#000;
+
+@z-1:1;
+@z-2:2;
+@z-3:3;
+@z-9:9;
+
+@f11:11px;
+@f12:12px;
+@f13:13px;
+@f14:14px;
+@f15:15px;
+
+/*************Global css***********/
+*{
+    outline: none;
+}
+html,body{
+    width:@full;
+    min-height:@full;
+    font-family: 'Lato', sans-serif;
+}
+.search-active:before,.mobile-menu-active:before {
+    content: '';
+    position: @fixed;
+    width: @full;
+    height: @full;
+    top: @false;
+    left: @false;
+    background: rgba(0,0,0,0.4);
+    display: @dib;
+    z-index: 2;
+}
+
+select::-ms-expand {
+    display: @dn;
+}
+.sections.nav-sections{
+    margin-bottom: @false;
+    background: @white;
+}
+main#maincontent {
+    max-width: @full;
+    margin: @false;
+    padding: @false;
+}
+.columns .column.main{
+    padding-bottom: @false;
+}
+div.mage-error[generated] {
+    font-size: @f14;
+    text-transform: initial;
+}
+/*************Global css  End***********/
+
+
+

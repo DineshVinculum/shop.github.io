@@ -1,0 +1,37 @@
+.section-content {
+    text-align: center;
+    margin-bottom: 16px;    
+}
+.section_title{
+    display: inline-block;
+    font-size: 26px;
+    text-transform: capitalize;
+    text-align: left;
+    padding-bottom: 16px;
+    position: relative;
+    font-weight: 600;
+    color: #818181;
+    -webkit-font-smoothing: antialiased;
+    &:before {
+        content: "";
+        left: 0;
+        right:0;
+        bottom: 6px;
+        height: 1px;
+        width: 99px;
+        position: absolute;
+        margin: 0 auto;
+        background: #818181;
+    }
+    &:after {
+        content: "";
+        left: 0;
+        right:0;
+        bottom: 0px;
+        height: 1px;
+        width: 59px;
+        position: absolute;
+        margin: 0 auto;
+        background: #818181;
+    }
+}

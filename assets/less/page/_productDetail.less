@@ -1,0 +1,240 @@
+.product_view_top_two {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    .product.media {
+        display: flex;
+        order: 0;
+        margin: 0;
+        width: 50%;
+        justify-content: center;
+    }
+    .product-info-main {
+        order: 1;
+        margin: 0;
+        width: 50%;
+        padding-left: 16px;
+    }
+    .page-title {
+        color: #818181;
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .product-reviews-summary {
+        display: none;
+    }
+    .product-info-price {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dotted #e0e0e0;
+        margin: 0 0px 16px;
+        padding: 0 0 8px;
+        .price-final_price {
+            font-size: 16px;
+            margin: 0;
+            font-weight: 600;
+            color: #76b852;
+        }
+        .product-info-stock-sku {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0;
+            align-items: flex-end;
+        }
+        .product.attribute.sku {
+            display: none;
+        }
+    }
+    .product-feature {
+        border-bottom: 1px dotted #e0e0e0;
+        margin: 0 0px 16px;
+        padding: 0 0 16px;
+        .vnv-container {
+            display: flex;
+            margin: 0;
+            .vnv-outer{
+                display: flex;
+                width: 20px;
+                height: 20px;
+                border: 2px solid green;
+                justify-content: center;
+                align-items: center;
+                .vnv-circle {
+                    width: 12px;
+                    height: 12px;
+                    background: green;
+                    border-radius: 50%;
+                }
+                &.non--veg{
+                    border: 2px solid red;
+                    .vnv-circle {
+                        background: red;
+                    } 
+                }
+            }
+            .vnv-text {
+                flex: 1;
+                margin-left: 10px;
+                color: #818181;
+            }
+        }
+        .product-featureList {
+            margin: 10px 0 0;
+            padding: 0 0 0 20px;
+            color: #818181;
+            li {
+                margin-bottom: 5px;
+                list-style: disc;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .product-delivery-block {
+        ul {
+            display: flex;
+            align-items: center;
+            .box-wrapping {
+                flex: 1;
+                text-align: center;
+                border-right: 1px dotted #e0e0e0;
+                color: #818181;
+                &:last-child {
+                    border-right: 0;
+                }
+                a {
+                    height: 40px;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    pointer-events: none;
+                }
+                i {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    .box-tocart {
+        margin-bottom: 16px;
+        .fieldset {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .field.qty {
+            display: flex;
+            margin-right: 10px;
+            align-items: center;
+            .label {
+                color: #818181;
+                font-weight: 600;
+            }
+            input.qty {
+                height: 40px;
+                width: 100px;
+                padding-left: 10px;
+                border: 1px solid #e0e0e0;
+                margin-left: 10px;
+                color: #818181;
+            }
+        }
+        button.tocart {
+            background-color: #76b852;
+            border: none;
+            box-shadow: 0 5px #76b852;
+            color: #fff;
+            transition: all .3s;
+            width: 190px;
+            height: 40px;            
+            line-height: 43px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            &:before {
+                position: absolute;
+                height: 100%;
+                top: 0;
+                line-height: 40px;
+                font-size: 140%;
+                width: 30px;
+                left: auto;
+                right: 10px;
+                z-index: 2;
+                content: "\f105";
+                font-family: "FontAwesome";
+            }
+            &:after {
+                width: 30%;
+                height: 200%;
+                background: rgba(255, 255, 255, 0.1);
+                z-index: 1;
+                right: 0;
+                top: 0;
+                margin: -5px 0 0 -5px;
+                -webkit-transform-origin: 0 0;
+                -webkit-transform: rotate(-20deg);
+                -moz-transform-origin: 0 0;
+                -moz-transform: rotate(-20deg);
+                -ms-transform-origin: 0 0;
+                -ms-transform: rotate(-20deg);
+                transform-origin: 0 0;
+                transform: rotate(-20deg);
+                content: '';
+                position: absolute;
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+            &:hover:after {
+                width: 40%;
+            }
+        }
+    }
+}
+
+.product.detailed {
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 16px;
+    margin-bottom: 16px;
+    .product.data {
+        display: flex;
+    }
+    .protab_title {
+        width: 300px;
+        li{
+            max-width: 80%;
+            padding: 7px 10px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            &.active,&:hover {
+                background: #818181;                
+                a{
+                    color:white
+                }
+            }
+        }
+        
+    }
+    .protab_content_right{
+        .attribute-feature {
+            margin: 10px 0 0;
+            padding: 0 0 0 20px;
+            color: #818181;
+            li{
+                margin-bottom: 5px;
+                list-style: disc;
+            }
+        }
+    }
+}

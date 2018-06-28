@@ -1,0 +1,135 @@
+
+/************ Model Start***********/
+.model--popup {
+    background-color: rgba(51,51,51,0.55);
+    bottom: @false;
+    left: @false;
+    position: @fixed;
+    right: @false;
+    top: @false;
+    z-index: -1;
+    align-items: @tc;
+    justify-content: @tc;
+    display: @df;
+    opacity: @false;
+    visibility: @hidden;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+    .video_popup{
+        background: @white;
+        padding: 20px;
+        position: @relative;
+    }
+}
+.model--popup--open{
+    opacity: @true;
+    visibility: @visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    z-index: @z-9;
+}
+.action-close {
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    line-height: 16px;
+    color: #8f8f8f;
+    font-weight: normal;
+    position: @relative;
+    top: -10px;
+    float: @fr;
+    cursor: @pointer;
+    &:hover{
+        color: #1a1a1a;
+    }
+}
+/************ Model End ***********/ 
+
+
+/************* Forget Password*************/
+.forgot_popup{
+    width:900px;
+    max-width:80%;
+    margin: @center;
+    background: @white;
+    padding: 25px 0;
+    position: @relative;
+    .form.password.forget
+    {
+        width:@full; 
+    } 
+    .action-close{
+        right: 20px;
+        top:20px;
+        position: @absolute;
+    }
+    .fieldset{
+        margin-right: @false;
+    }
+    .field.heading {
+        margin-bottom: 20px;
+        font-size: 22px;
+        text-transform: @ttu;
+        text-align: @tc;
+    }
+    .note{
+        font-size: @f12;
+        color: @black;
+        margin-top: 20px;
+        text-align: @tc;
+    }
+    .email{
+        margin: 30px auto 30px;
+        width: 300px;
+        .label{
+            width:@full;
+            text-align: @tl;
+            font-size: @f12;
+            margin: 8px 0;
+            display: @db;
+            line-height: 1;
+        }
+        .input-text{
+            background:@white;
+            border:1px solid #eae9ea;
+            border-radius: 1px;
+            font-size: @f14;
+            height: 32px;
+            line-height: 1.42857143;
+            padding: 0 9px;
+            vertical-align: baseline;
+            width: @full;
+        }
+    }
+    .mage-error{
+        font-size: @f12 !important;
+        text-align:@tc;
+    }
+    .actions-toolbar{
+        text-align: @tc;
+        .primary{
+            text-align: @tc;
+            float: @dn;
+            .primary{
+                margin: @false !important;
+                position: @relative;
+                text-transform: @ttu;
+                color:@white;
+                background:@black;
+                font-size: @f11;
+                display: @dib;
+                text-align: @tc;
+                padding: 8px 30px;
+                border: @false;
+                width: 300px !important;
+                border-radius:@false;
+                &:hover{
+                    background: @theme-color;
+                }
+            }
+        }
+        .forgot-back{
+            display: @dn;
+        }
+    }
+    
+}
